@@ -62,12 +62,7 @@ open(pkfname);
 setOption("ShowRowNumbers", false);
 updateResults();
 
-// Plot values
-// Plot.create("Plot of Results", "Time", "Peak intensity");
-// Plot.add("Circle", Table.getColumn("t", "Results"), Table.getColumn("Peak intensity", "Results"));
-// Plot.setStyle(0, "blue,#a0a0ff,1.0,Circle");
 Fit.doFit("Exponential with Offset", Table.getColumn("t", "timecourse.csv"),Table.getColumn("Peak intensity", "timecourse.csv"));
 Fit.plot();
 Plot.setXYLabels("t", "Peak intensity")
-saveAs("PNG", path+"tcourse-plot.png")
 }

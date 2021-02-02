@@ -8,8 +8,6 @@ zanalyzer is a macro for ImageJ that performs the following actions for a time s
 
 - Plots peak intensity vs time and then performs non-linear regression, fitting an exponential decay with offset function.
 
-- Saves the plot as a PNG file.
-
 ## Required inputs:
 
 - Requires a time series of z-stacks.
